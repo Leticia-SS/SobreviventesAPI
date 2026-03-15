@@ -30,7 +30,7 @@ public class Sobrevivente {
 
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(
-            name = "sobrevivente-comunidade",
+            name = "sobrevivente_comunidade",
             joinColumns = @JoinColumn(
                     nullable = false,
                     name = "sobrevivente_id"
