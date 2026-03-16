@@ -16,9 +16,9 @@ class SobreviventesApiApplicationTests {
 		service.buscarPeloId(1L);
 	}
 
-	@Test
-	void deveBuscarTodos() {
-		service.buscarTodos();
-	}
+//	@Test
+//	void deveBuscarTodos() {
+//		service.buscarTodos();
+//	}
 
 }

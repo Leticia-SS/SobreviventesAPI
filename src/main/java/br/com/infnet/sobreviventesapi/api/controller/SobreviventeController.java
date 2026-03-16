@@ -17,7 +17,7 @@ public class SobreviventeController {
     private final SobreviventeService sobreviventeService;
 
     @PostMapping
-    public void cadastrar(@RequestBody NovoSobreviventeRequest novoSobreviventeRequest) {
+    public void cadastrar(@RequestBody NovoSobreviventeRequest novo) {
 
     }
 

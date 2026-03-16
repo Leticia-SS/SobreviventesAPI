@@ -12,7 +12,12 @@ import java.util.Set;
 @Table(name = "comunidades")
 public class Comunidade {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "survivor_sequence_comunidade")
+    @SequenceGenerator(
+            name = "survivor_sequence_comunidade",
+            sequenceName = "comunidade_id_seq",
+            allocationSize = 50
+    )
     private Long id;
 
     @Column(nullable = false,length = 70)
